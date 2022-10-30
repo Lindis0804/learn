@@ -19,11 +19,14 @@ const courseRoute = require("./routes/courseRoute")
 app.use("/course",courseRoute)
 const userRoute = require("./routes/userRoute")
 app.use("/user",userRoute)
-app.get("/",(req,res)=>{
+// app.get("/",(req,res)=>{
+//     res.send("Hello World!!")
+// })
+// const PORT  = process.env.PORT|| 3000
+// console.log(process.env)
+app.set('port',(process.env.PORT||3000))
+app.get('/',function(req,res){
     res.send("Hello World!!")
-})
-const PORT  = process.env.PORT|| 3000
-console.log(process.env)
-app.listen(PORT, ()=>{
-    console.log(`server is running ... on ${PORT}`)
+}).listen(app.get('port'), ()=>{
+    console.log(`server is running ... on ${app.get('port')}`)
 })
