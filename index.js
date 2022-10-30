@@ -10,7 +10,7 @@ dotenv.config()
 mongoose.connect(process.env.MONGODB_URL,()=>{
     console.log("Connected mongodb")
 })
-app.use(bodyParser.json({limit:"500mb"}))
+app.use(bodyParser.json({limit:"1000mb"}))
 app.use(cors())
 app.use(morgan("common"))
 const questionRoute = require("./routes/questionRoute")
