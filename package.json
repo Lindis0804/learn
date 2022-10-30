@@ -1,7 +1,7 @@
 {
   "name": "learn",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backed for an incredible learning app for SoICT Student",
   "main": "index.js",
   "engine": {
     "node": "16.17.0",
@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "worker": "node index.js"
   },
   "author": "",
   "license": "ISC",
