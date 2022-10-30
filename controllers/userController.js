@@ -1,5 +1,5 @@
 //
-const bcrypt = require("bcrypt")
+const bcrypt = require("bcryptjs")
 const lodash = require("lodash")
 const axios = require("axios")
 const otpGenerator = require('otp-generator')
